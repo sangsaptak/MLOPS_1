@@ -1,0 +1,6 @@
+if sudo docker ps | grep webos
+then
+echo "Sir, I am already running"
+else
+sudo docker run -d -i -t -p 8084:80 -v /jarvis:/usr/local/apache2/htdocs/ --name webos httpd
+fi
