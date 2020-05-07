@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Hello welcome to your git Tony Stark"
+
+git push
