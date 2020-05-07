@@ -1,0 +1,7 @@
+if sudo docker ps | grep testwebos
+then
+sudo docker rm -f testwebos
+sudo docker run -d -i -t -p 8085:80 -v /great:/usr/local/apache2/htdocs/ --name testwebos httpd
+else
+sudo docker run -d -i -t -p 8085:80 -v /great:/usr/local/apache2/htdocs/ --name testwebos httpd
+fi
